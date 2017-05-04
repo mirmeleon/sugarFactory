@@ -36,8 +36,8 @@ namespace SugarFactory.Services
 
         public AllUsersWithAllPrefixesVm GetNotAssignedPrefixesAndUsers()
         {
-            IEnumerable<SugarUser> users = this.Context.SugarUsers.Where(u => u.ClientPrefix == null);
-            IEnumerable<ClientPrefix> prefixes = this.Context.ClientPrefixes.Where(p => p.SugarUser == null);
+            IEnumerable<SugarUser> users = this.Context.SugarUsers.Where(u => u.ClientPrefix == null).ToList();
+            IEnumerable<ClientPrefix> prefixes = this.Context.ClientPrefixes.Where(p => p.SugarUser == null).ToList();
 
             AllUsersWithAllPrefixesVm allUsersAndPrefixes = new AllUsersWithAllPrefixesVm();
             allUsersAndPrefixes.Prefixes = prefixes;
