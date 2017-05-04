@@ -262,6 +262,7 @@
     <Content Include="403.html" />
     <Content Include="500.aspx" />
     <Content Include="500.html" />
+    <Content Include="App_Data\appHarbor.txt" />
     <Content Include="Assets\dist\css\sb-admin-2.css" />
     <Content Include="Assets\dist\css\sb-admin-2.min.css" />
     <Content Include="Assets\dist\js\sb-admin-2.js" />
@@ -536,9 +537,7 @@
       if not exist "$(WebProjectOutputDir)\bin\Roslyn" md "$(WebProjectOutputDir)\bin\Roslyn"
       start /MIN xcopy /s /y /R "$(OutDir)roslyn\*.*" "$(WebProjectOutputDir)\bin\Roslyn"
     </PostBuildEvent>
-</PropertyGroup>
- 
-
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
