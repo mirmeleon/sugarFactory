@@ -51,7 +51,7 @@ namespace SugarFactory.Services
                     throw new ArgumentNullException();
                 }
 
-                string pathImg = Path.Combine(HttpContext.Current.Server.MapPath("~/App_Data"), imgName);
+                string pathImg = Path.Combine(HttpContext.Current.Server.MapPath("~/UploadedFiles"), imgName);
                 fileImg.SaveAs(pathImg);
             }
 
@@ -64,7 +64,7 @@ namespace SugarFactory.Services
                     throw new ArgumentNullException();
                 }
 
-                string pathPdf = Path.Combine(HttpContext.Current.Server.MapPath("~/App_Data"), pdfName);
+                string pathPdf = Path.Combine(HttpContext.Current.Server.MapPath("~/UploadedFiles"), pdfName);
 
                 filePdf.SaveAs(pathPdf);
             }

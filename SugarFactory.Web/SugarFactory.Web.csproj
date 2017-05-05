@@ -262,7 +262,6 @@
     <Content Include="403.html" />
     <Content Include="500.aspx" />
     <Content Include="500.html" />
-    <Content Include="App_Data\appHarbor.txt" />
     <Content Include="Assets\dist\css\sb-admin-2.css" />
     <Content Include="Assets\dist\css\sb-admin-2.min.css" />
     <Content Include="Assets\dist\js\sb-admin-2.js" />
@@ -423,6 +422,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="404.aspx" />
+    <Content Include="UploadedFiles\appHarbor.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -473,9 +473,7 @@
     <Content Include="Views\Shared\CustomError.cshtml" />
     <Content Include="Views\Home\FancyChat.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UploadedFiles\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />

@@ -32,7 +32,7 @@
                 <tr>
                     <td>@Html.DisplayFor(model => sachet.ClientPrefix)</td>
                     <td>@Html.DisplayFor(model => sachet.UniqueNumber)</td>
-                    <td><img src="~/App_Data/@Url.Content(sachet.ImageUrl)" width="50" height="75" alt="some img" /> </td>
+                    <td><img src="~/UploadedFiles/@Url.Content(sachet.ImageUrl)" width="50" height="75" alt="some img" /> </td>
                     <td>@Html.ActionLink("New Order", "NewOrder", "Order", new { id = sachet.Id }, new { @class = "btn btn-success" })</td>
 
 
